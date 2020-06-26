@@ -6,12 +6,10 @@ script:
   - cd ..
 deploy:
   provider: releases
-  
   pre-release: true
   api_key: $GITHUB_TOKEN
   skip_cleanup: true
   on:
     repo: PolinaK1/rep06
-    
-    branch: dev
+  branch: dev
     tags: true
